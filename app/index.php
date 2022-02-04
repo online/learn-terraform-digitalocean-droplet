@@ -2,7 +2,8 @@
 <html>
 
 <head>
-  <title>Terramino</title>
+  <title>Follow the white rabbit!</title>
+  <meta charset="UTF-8">
   <link rel="icon" href="https://www.terraform.io/favicon.ico" type="image/x-icon" />
   <style>
     html,
@@ -21,7 +22,7 @@
     }
 
     h1 {
-      font-family: Impact, Charcoal, sans-serif
+      font-family: "Gill Sans", sans-serif;
     }
 
     canvas {
