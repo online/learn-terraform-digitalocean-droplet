@@ -50,9 +50,10 @@
 <body>
   <div class="container">
     <div class="content">
-      <h1>Terramino on DigitalOcean</h1>
-
-      <p>Use left and right arrow keys to move blocks.<br />Use up arrow key to flip block.</p>
+      <h1>Follow the white rabbit!</h1>
+      <p>А пока вы следуете за белым кроликом — можете поиграть в Тетрис :)</p>
+      <p>Use left and right arrow keys to move blocks.<br />
+      Use up arrow key to flip block.</p>
     </div>
     <div class="content">
       <canvas width="320" height="640" id="game"></canvas>

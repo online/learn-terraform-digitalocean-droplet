@@ -9,12 +9,16 @@ terraform {
   }
 }
 
-provider "digitalocean" {}
+provider "digitalocean" {
+  token = var.do_token
+}
+
+variable "do_token" {}
 
 resource "digitalocean_droplet" "terramino" {
-  image     = "ubuntu-18-04-x64"
+  image     = "ubuntu-20-04-x64"
   name      = "terramino"
-  region    = "nyc1"
+  region    = "fra1"
   size      = "s-1vcpu-1gb"
   user_data = file("terramino_app.yaml")
 }

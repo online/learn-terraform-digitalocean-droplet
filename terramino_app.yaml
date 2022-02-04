@@ -14,12 +14,12 @@ users:
     groups: users, admin
     lock_passwd: false
     ssh_authorized_keys:
-      - # Paste your created SSH key here
+      - ~/.ssh/horoshop/id_rsa.pub
 
 runcmd:
   - sudo apt-get update
   - sudo apt install apache2 -q -y
-  - sudo curl https://raw.githubusercontent.com/hashicorp/learn-terraform-digitalocean-droplet/main/app/index.php -O
+  - sudo curl https://raw.githubusercontent.com/online/learn-terraform-digitalocean-droplet/main/app/index.php -O
   - sudo rm /var/www/html/index.html
   - sudo mv index.php /var/www/html
   - sudo systemctl restart apache2
